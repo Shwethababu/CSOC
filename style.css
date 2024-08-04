@@ -7,11 +7,12 @@
 
 .container{
     width: 100%;
-   min-height: 100vh;
+    height: 100%;
     background-image:url('img/bc.jpg');
     background-size: cover;
     background-position: center;
     padding: 10px 8%;
+    background-position: fixed;
 }
 
 nav{
@@ -42,10 +43,13 @@ nav ul li{
     display: inline-block;
     margin: 10px 20px;
     text-transform: uppercase;
+   
+   
 }
 nav ul li a{ 
     color: #fff;
     text-decoration: none;
+    flex-direction:column;
 
 }
 
@@ -127,7 +131,7 @@ ul#projectList, ul#taskList {
 }
 
 ul#projectList li, ul#taskList li {
-    background-color: #f8f8f8;
+    background-color:whitesmoke;
     margin-bottom: 8px;
     padding: 10px;
     border-radius: 4px;
@@ -174,7 +178,7 @@ button.edit:hover {
 
 
 
-.box2, .box3{
+.box2{
 
     margin: 100px 0 0;
     width: 100%;
@@ -182,6 +186,128 @@ button.edit:hover {
     display: flex;
     background-color:rgba(222, 232, 240, 0.5) ;
 
+}
+
+.box2,.box3{
+    justify-content:space-between;
+}
+.box3{
+    margin: 100px 0 0;
+    
+    
+    
+
+    .contact{
+        padding: 5rem 0 10rem 0 ;
+        background-color:rgba(222, 232, 240, 0.5);
+     }
+    
+     .contact .ccon{
+        margin-left: 5%;
+        color:#194b88;
+        
+      }
+    
+      .contact .ccon h1{
+        margin-bottom: 10rem;
+        font-weight: 500;
+        font-size: 2rem;
+        margin-left: 5%;
+        color:#194b88;
+    }
+    .contact .ccon h1 span{
+        color: #194b88;
+    }
+    .contact .ccon img{
+        width:  100px;
+        height: 100px;
+        object-fit: cover;
+    }
+    div a{
+        text-decoration: none;
+        color:#194b88;
+    }
+    .for{
+        padding: 5rem 0 10rem 0 ;
+        background-color:rgba(222, 232, 240, 0.5);
+    }
+    .name{
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        width: 70%;
+        margin-left: 15%;
+        
+    }
+    .textarea{
+        display: flex;
+        justify-content: center;
+        width: 70%;
+        margin-left: 15%;
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+    }
+    .name input{
+        width: 50%;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        border: 1px solid #333;
+        border-radius: 5px;
+        background-color: rgba(222, 232, 240, 0.5);
+        color:black;
+        font-size: 1.2rem;
+    }
+    .textarea textarea{
+        width: 50%;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        border: 1px solid #333;
+        border-radius: 5px;
+        background-color: rgba(222, 232, 240, 0.5);
+        color:black;
+        font-size: 1.2rem;
+    }
+    .button input{
+        padding: 1rem 1.5rem 1rem 1.5rem;
+        margin-bottom: 1.5rem;
+        border: 1px solid #333;
+        border-radius: 20px;
+        background-color:rgba(222, 232, 240, 0.5) ;
+        color: #194b88;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+    .button input:hover{
+        background-color:rgba(11, 25, 36, 0.5);
+        color: #fff;
+        border-color: #151516;
+        
+    }
+    .footer{
+        padding: 2rem 0 0 0 ;
+        background-color:rgba(222, 232, 240, 0.5) ;;
+        color: #fff;
+    }
+    .footer div{
+        margin-left: 40%;
+    }
+    .items {
+        display: flex;
+        flex-direction:row;
+        justify-content: center; /* Center items horizontally */
+        gap: 10rem; /* Gap between items */
+        flex-wrap: wrap; /* Wrap items if necessary */
+    }
+    
+    .items div {
+        text-align: center;
+        max-width: 200px; /* Adjust as needed */
+    }
+
+    
+    
 }
 
 
