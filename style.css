@@ -197,27 +197,27 @@ button.edit:hover {
 }
 .box3{
     margin: 100px 0 0;
+    width:100%;
     
     
     
 
-    .contact{
-        padding: 5rem 0 10rem 0 ;
-        background-color:rgba(222, 232, 240, 0.5);
-     }
     
-     .contact .ccon{
+    
+    .contact .ccon{
         margin-left: 5%;
         color:#194b88;
         
-      }
+    }
     
       .contact .ccon h1{
-        margin-bottom: 10rem;
+        margin-bottom: 7rem;
         font-weight: 500;
         font-size: 2rem;
         margin-left: 5%;
         color:#194b88;
+        text-align: center;
+        font-family: sans-serif;
     }
     .contact .ccon h1 span{
         color: #194b88;
@@ -226,6 +226,11 @@ button.edit:hover {
         width:  100px;
         height: 100px;
         object-fit: cover;
+        gap:2rem;
+        justify-content: space-around;
+        align-items:center;
+        
+        
     }
     div a{
         text-decoration: none;
@@ -234,13 +239,14 @@ button.edit:hover {
     .for{
         padding: 5rem 0 10rem 0 ;
         background-color:rgba(222, 232, 240, 0.5);
-    }
+    } 
     .name{
         display: flex;
         gap: 2rem;
-        justify-content: center;
+        justify-content:space-between;;
         width: 70%;
-        margin-left: 15%;
+        margin-left: 15%
+        
         
     }
     .textarea{
@@ -248,6 +254,8 @@ button.edit:hover {
         justify-content: center;
         width: 70%;
         margin-left: 15%;
+    
+       
     }
     .button{
         display: flex;
@@ -267,6 +275,7 @@ button.edit:hover {
         width: 50%;
         padding: 1.5rem;
         margin-bottom: 1.5rem;
+        margin-top:1,5rem;
         border: 1px solid #333;
         border-radius: 5px;
         background-color: rgba(222, 232, 240, 0.5);
@@ -289,19 +298,16 @@ button.edit:hover {
         border-color: #151516;
         
     }
-    .footer{
-        padding: 2rem 0 0 0 ;
-        background-color:rgba(222, 232, 240, 0.5) ;;
-        color: #fff;
-    }
-    .footer div{
-        margin-left: 40%;
+    
+        
+
     }
     .items {
         display: flex;
-        flex-direction:row;
-        justify-content: center; /* Center items horizontally */
-        gap: 10rem; /* Gap between items */
+        flex-direction:column;
+        align-items: center;
+        justify-content:space-between;/* Center items horizontally */
+         /* Gap between items */
         flex-wrap: wrap; /* Wrap items if necessary */
     }
     
@@ -311,9 +317,51 @@ button.edit:hover {
     }
 
     
+
+
     
+    
+
+
+.for{
+    width: 50%;
+    height: 100%;
+    background-color:rgba(222, 232, 240, 0.5) ;
+
 }
 
+.contact {
+    width: 50%;
+    height: 100%;
+    background-color:rgba(222, 232, 240, 0.5) ;
+}
+.for , .contact {
+    margin: 10px;
+    height: auto;
+    flex:1;
 
+}
+.box3{
+    display:flex;
+}
+
+.footer{
+    
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color:rgba(222, 232, 240, 0.5) ;
+    color:white;
+    text-align:center;
+    padding:1em 0;
+
+    
+    
+
+}
+.footer div{
+   text-align:center;
+    width:100%;
+}
 
 
