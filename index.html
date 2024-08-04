@@ -14,24 +14,35 @@
             <img src="img/logo (2).png" class="logo" alt="logo">
             <h1 id="current-time"></h1>
             <ul>
-                <li><a href="#">placeholder</a></li>
-                <li><a href="#">placeholder</a></li>
+                <li><a href="#">deadline</a></li>
+                <li><a href="#">efficiency</a></li>
                 <li><a href="#">contact us</a></li>
             </ul>
         </nav>
         <div class="box">
-            <div class="right"></div>
-            <div class="left"></div>
+            <div class="right">
+                <div class="project-container">
+                    <h1>Projects</h1>
+                    <div class="project-input">
+                        <input type="text" id="projectInput" placeholder="Add a new project...">
+                        <input type="date" id="projectDate" placeholder="Select due date">
+                        <button id="addProjectButton">Add Project</button>
+                    </div>
+                    <ul id="projectList"></ul>
+                </div>
+            </div>
+            <div class="left">
+                <div class="task-container">
+                    <h1>Tasks</h1>
+                    <div class="todo-input">
+                        <input type="text" id="taskInput" placeholder="Add a new task...">
+                        <button id="addTaskButton">Add Task</button>
+                    </div>
+                    <ul id="taskList"></ul>
+                </div>
+            </div>
         </div> 
-
-
     </div>
-    <script>
-    let time = document.getElementById("current-time");
-            setInterval(() => {
-                let d = new Date();
-                time.innerHTML = d.toLocaleTimeString();    
-            }, 1000);
-        </script>
+    <script src="script.js"></script>
 </body>
 </html>

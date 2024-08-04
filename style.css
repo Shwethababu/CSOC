@@ -65,11 +65,109 @@ nav ul li a{
 .right {
     width: 50%;
     height: 100%;
-    background-color:rgba(66, 87, 104, 0.5) ;
+    background-color:rgba(222, 232, 240, 0.5) ;
 }
 
 .left {
     width: 50%;
     height: 100%;
-    background-color:rgba(66, 87, 104, 0.5) ;
+    background-color:rgba(222, 232, 240, 0.5) ;
+}
+
+
+/* Pr*/
+.right .project-container h1,
+.left .task-container h1 {
+    color: #194b88;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+
+.project-container, .task-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto; 
+
+}
+
+.project-input, .todo-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#projectInput, #taskInput, #projectDate {
+    width: calc(100% - 120px);
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#addProjectButton, #addTaskButton {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    flex-shrink: 0;
+}
+
+#addProjectButton:hover, #addTaskButton:hover {
+    background-color: #0056b3;
+}
+
+ul#projectList, ul#taskList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul#projectList li, ul#taskList li {
+    background-color: #f8f8f8;
+    margin-bottom: 8px;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+button.delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+button.delete:hover {
+    background-color: #c82333;
+}
+
+button.select {
+    background-color: #007bff;
+    color: white;
+}
+
+button.select:hover {
+    background-color: #0056b3;
+}
+
+
+button.edit {
+    background-color: #28a745;
+    color: white;
+    margin-right: 5px;
+}
+
+button.edit:hover {
+    background-color: #218838;
 }
