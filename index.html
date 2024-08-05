@@ -44,6 +44,102 @@
         </div> 
          
         <div class="box2">
+            <div class="task-manager">
+        <div class="header">
+            <div class="title">Deadline</div>
+            <button class="create-btn" onclick="toggleForm()">CREATE</button>
+            <input type="text" class="search-input" placeholder="+ search">
+        </div>
+        
+        
+        <div class="task-list">
+            <table id="task-table">
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0)">Name</th>
+                        <th onclick="sortTable(1)">Active</th>
+                        <th onclick="sortTable(2)">Deadline</th>
+                        <th onclick="sortTable(3)">Created by</th>
+                        <th onclick="sortTable(4)">Assignee</th>
+                        <th onclick="sortTable(5)">Project</th>
+                        <th onclick="sortTable(6)">Tags</th>
+                        <th>Actions</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Task 1</td>
+                        <td>Yes</td>
+                        <td>2024-08-05</td>
+                        <td>John</td>
+                        <td>Alice</td>
+                        <td>Project A</td>
+                        <td>Tag 1</td>
+                        <td><button onclick="deleteTask(this)">Delete</button></td>
+                        
+
+                    </tr>
+                    <tr>
+                        <td>Task 2</td>
+                        <td>No</td>
+                        <td>2024-08-06</td>
+                        <td>Jane</td>
+                        <td>Bob</td>
+                        <td>Project B</td>
+                        <td>Tag 2</td>
+                        <td><button onclick="deleteTask(this)">Delete</button></td>
+                        
+
+                    </tr>
+                    <tr>
+                        <td>Task 3</td>
+                        <td>Yes</td>
+                        <td>2024-08-07</td>
+                        <td>Jim</td>
+                        <td>Charlie</td>
+                        <td>Project C</td>
+                        <td>Tag 3</td>
+                        <td><button onclick="deleteTask(this)">Delete</button></td>
+                        
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="task-form" id="task-form">
+            <h2>Create a new task</h2>
+            <form id="new-task-form" onsubmit="addTask(event)">
+                <label for="task-name">Name:</label>
+                <input type="text" id="task-name" name="task-name" required>
+                
+                <label for="task-active">Active:</label>
+                <select id="task-active" name="task-active" required>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+                
+                <label for="task-deadline">Deadline:</label>
+                <input type="date" id="task-deadline" name="task-deadline" required>
+                
+                <label for="task-created-by">Created by:</label>
+                <input type="text" id="task-created-by" name="task-created-by" required>
+                
+                <label for="task-assignee">Assignee:</label>
+                <input type="text" id="task-assignee" name="task-assignee" required>
+                
+                <label for="task-project">Project:</label>
+                <input type="text" id="task-project" name="task-project" required>
+                
+                <label for="task-tags">Tags:</label>
+                <input type="text" id="task-tags" name="task-tags" required>
+                
+                <button type="submit">Add Task</button>
+                <button type="button" onclick="toggleForm()">Cancel</button>
+            </form>
+        </div>
+    </div>
+            
             
         </div>
 
